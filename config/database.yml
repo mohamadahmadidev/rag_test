@@ -23,10 +23,10 @@ default: &default
 development:
   adapter: postgresql
   host: localhost
-  port: 5433
+  port: 5434
   database: rag_tutorial_development
   username: postgres
-  password: 123123
+  password: postgres
 test:
   <<: *default
   database: rag_tutorial_test
