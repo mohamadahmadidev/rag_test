@@ -1,0 +1,19 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+# == Schema Information
+#
+# Table name: documents
+#
+#  id         :bigint           not null, primary key
+#  content    :text
+#  filename   :string
+#  created_at :datetime         not null
+#  updated_at :datetime         not null
+#
+one:
+  filename: MyString
+  content: MyText
+
+two:
+  filename: MyString
+  content: MyText
