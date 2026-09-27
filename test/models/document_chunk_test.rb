@@ -6,7 +6,7 @@ require "test_helper"
 #
 #  id          :bigint           not null, primary key
 #  content     :text
-#  embedding   :vector(1536)
+#  embedding   :vector(768)
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #  document_id :bigint           not null

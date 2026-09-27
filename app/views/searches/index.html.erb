@@ -1,0 +1,20 @@
+<h1>RAG Tutorial</h1>
+
+<%= form_with url: search_path, method: :post do |form| %>
+  <%= form.text_field :question,
+        placeholder: "Ask a question",
+        required: true %>
+
+  <%= form.submit "Search" %>
+<% end %>
+
+<% if @results.any? %>
+  <h2>Results</h2>
+
+  <% @results.each do |chunk| %>
+    <div>
+      <p><%= chunk.content %></p>
+      <small><%= chunk.document.filename %></small>
+    </div>
+  <% end %>
+<% end %>
